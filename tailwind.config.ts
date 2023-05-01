@@ -9,6 +9,10 @@ export default {
         primary: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        tennis: 'EFFD53',
+        night: '0A090B',
+        sky: '8196C8',
+        coral: 'EE7C68',
         primary: {
           // Customize it on globals.css :root
           50: 'rgb(var(--tw-color-primary-50) / <alpha-value>)',
