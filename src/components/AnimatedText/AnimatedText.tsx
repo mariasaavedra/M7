@@ -1,6 +1,6 @@
 import styles from './AnimatedText.module.css';
 
-const word = 'STUDIO';
+const word = 'M7 STUDIO';
 
 interface AnimatedTextProps {
   position: 'top' | 'bottom';
