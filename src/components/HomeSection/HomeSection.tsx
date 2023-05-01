@@ -1,5 +1,6 @@
 import AnimatedText from '@/components/AnimatedText/AnimatedText';
 import Heading from '@/components/Heading/Heading';
+import Viewer from '@/components/Viewer/Viewer';
 
 export interface HomeSectionProps {}
 
@@ -17,10 +18,8 @@ export default function HomeSection(props: HomeSectionProps) {
         >
           <AnimatedText position='top'></AnimatedText>
           <Heading>Home</Heading>
-          <img
-            className='mx-auto h-2/3 self-center'
-            src='/images/head.png'
-          ></img>
+          <Viewer></Viewer>
+
           <AnimatedText position='bottom'></AnimatedText>
         </div>
       </div>

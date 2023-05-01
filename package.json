@@ -19,6 +19,8 @@
     "new:component": "npx plop"
   },
   "dependencies": {
+    "@react-three/drei": "^9.66.1",
+    "@react-three/fiber": "^8.13.0",
     "@types/three": "^0.151.0",
     "clsx": "^1.2.1",
     "next": "^13.3.0",
