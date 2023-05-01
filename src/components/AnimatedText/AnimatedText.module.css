@@ -1,1 +1,18 @@
-.AnimatedTextComponent { }
+.AnimatedTextComponent {
+  background: theme(colors.night);
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: theme(space.2);
+}
+
+.AnimatedTextComponent span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.115em;
+  margin: 0 4px;
+  text-transform: uppercase;
+}
