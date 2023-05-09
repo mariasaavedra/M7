@@ -1,26 +1,29 @@
-import { OrbitControls, Stage } from '@react-three/drei';
+import { Environment, OrbitControls } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
-import React, { Suspense, useRef } from 'react';
+import React, { Suspense } from 'react';
 
 import Model from '@/components/Model/Model';
 
 export default function Viewer() {
-  const ref = useRef();
   return (
-    <Canvas shadows dpr={[1, 2]} camera={{ fov: 10 }}>
+    <Canvas dpr={[1, 2]} camera={{ fov: 30 }}>
+      <ambientLight />
+      <spotLight
+        intensity={0.5}
+        angle={0.2}
+        penumbra={1}
+        position={[5, 15, 10]}
+      />
+      <directionalLight position={[10, 10, 0]} intensity={500} />
+      <directionalLight position={[-10, 10, 5]} intensity={500} />
+      <directionalLight position={[-10, 500, 0]} intensity={500} />
+      <directionalLight position={[0, -10, 0]} intensity={500} />
+      <ambientLight />
       <Suspense fallback={null}>
-        <Stage
-          controls={ref}
-          preset='rembrandt'
-          intensity={1}
-          environment='city'
-        >
-          false
-          <Model />
-          false
-        </Stage>
+        <Model />
+        <Environment files='sky.hdr' />
       </Suspense>
-      <OrbitControls ref={ref} autoRotate />
+      <OrbitControls autoRotateSpeed={8} enableZoom={false} autoRotate />
     </Canvas>
   );
 }

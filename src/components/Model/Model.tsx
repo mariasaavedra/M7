@@ -7,17 +7,16 @@ import { useRef } from 'react';
 
 export default function Model(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF('http://localhost:3000/head.gltf');
+  const { nodes, materials } = useGLTF('http://localhost:3000/green.gltf');
   return (
-    <group className='absolute z-50' ref={group} {...props} dispose={null}>
+    <group {...props} dispose={null}>
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.ZBrush_defualt_group.geometry}
-        material={nodes.ZBrush_defualt_group.material}
+        material={materials['Material.002']}
+        position={[0, 0.35, 0]}
       />
     </group>
   );
 }
 
-useGLTF.preload('http://localhost:3000/head.gltf');
+useGLTF.preload('http://localhost:3000/green.gltf');

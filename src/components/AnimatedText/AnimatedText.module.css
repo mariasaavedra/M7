@@ -3,10 +3,10 @@
   white-space: nowrap;
   position: absolute;
   left: 0;
-  gap: 1rem;
-  padding: theme(space.6);
+  gap: 0.5rem;
+  padding: theme(space.2);
   width: 100vw;
-  height: 100px;
+  height: 60px;
 }
 
 .wrapper {
@@ -17,11 +17,11 @@
 .AnimatedTextComponent span {
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 28px;
   line-height: 48px;
   letter-spacing: 0.115em;
   margin: 0 15px;
-  gap: 1rem;
+  gap: 0.5rem;
   text-transform: uppercase;
 }
 
