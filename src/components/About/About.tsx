@@ -20,7 +20,7 @@ export default function About() {
             realization.
           </p>
         </div>
-        <video
+        {/* <video
           className='absolute bottom-0 right-[-250px] top-0 hidden opacity-90  md:block '
           loop={true}
           autoPlay={true}
@@ -28,7 +28,7 @@ export default function About() {
           preload='false'
         >
           <source src='/s3.mp4' />
-        </video>
+        </video> */}
       </div>
     </div>
   );
