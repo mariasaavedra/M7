@@ -7,9 +7,7 @@ import AnimatedText from '@/components/AnimatedText/AnimatedText';
 import Button from '@/components/Button/Button';
 import Viewer from '@/components/Viewer/Viewer';
 
-export interface HomeSectionProps {}
-
-export default function HomeSection(props: HomeSectionProps) {
+export default function HomeSection() {
   return (
     <>
       {/* HOME */}
