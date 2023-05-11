@@ -1,7 +1,13 @@
+import { MaybeParentComponentProps } from 'interfaces/ParentComponentProps';
+
 import styles from './Button.module.css';
 
-export interface ButtonProps {}
+export type ButtonProps = MaybeParentComponentProps;
 
 export default function Button(props: ButtonProps) {
-  return <div className={styles.ButtonComponent}></div>;
+  return (
+    <div className={styles.ButtonComponent}>
+      <span>{props.children}</span>
+    </div>
+  );
 }
