@@ -21,7 +21,7 @@ export default function About() {
           </p>
         </div>
         <video
-          className='absolute bottom-0  right-[-250px] top-0  opacity-90 '
+          className='absolute bottom-0 right-[-250px] top-0 hidden opacity-90  md:block '
           loop={true}
           autoPlay={true}
           muted={true}
