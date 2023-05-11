@@ -8,9 +8,7 @@ import { useRef } from 'react';
 export default function Model(props: any) {
   const group = useRef();
   // tslint:disable-next-line
-  const { nodes, materials } = useGLTF(
-    'http://localhost:3000/green.gltf'
-  ) as any;
+  const { nodes, materials } = useGLTF('/green.gltf') as any;
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -22,4 +20,4 @@ export default function Model(props: any) {
   );
 }
 
-useGLTF.preload('http://localhost:3000/green.gltf');
+useGLTF.preload('/green.gltf');
