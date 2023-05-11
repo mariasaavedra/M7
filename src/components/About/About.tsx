@@ -27,7 +27,7 @@ export default function About() {
           muted={true}
           preload='false'
         >
-          <source src='/substance.mp4' />
+          <source src='/s3.mp4' />
         </video>
       </div>
     </div>
